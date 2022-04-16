@@ -41,22 +41,51 @@ const tagArray = [
     note: "Bug",
   },
 ];
+
+const suggestions = false;
 </script>
 
 <template>
   <main class="w-full">
     <Topbar />
-    <div
-      v-for="{ number, tagTitle, tagText, note, index } in tagArray"
-      :key="index"
-    >
-      <Tag
-        :number="number"
-        :tagTtitle="tagTitle"
-        :tagText="tagText"
-        :note="note"
-      />
+    <div v-if="suggestions" class="grid gap-y-5">
+      <div
+        v-for="{ number, tagTitle, tagText, note, index } in tagArray"
+        :key="index"
+      >
+        <Tag
+          :number="number"
+          :tagTtitle="tagTitle"
+          :tagText="tagText"
+          :note="note"
+        />
+      </div>
     </div>
+
+    <section v-else class="h-full">
+      <div
+        class="
+          h-full
+          bg-white
+          rounded-lg
+          flex flex-col
+          items-center
+          justify-center
+        "
+      >
+        <div class="h-20 w-20">
+          <img src="../assets/no-data.png" class="w-full h-full object-fill" />
+        </div>
+        <span class="font-bold text-2xl text-nora-blue-300 text-center">There is no feedback yet.</span>
+
+        <div class="max-w-410">
+          <p class="text-base text-nora-gray-400 text-center">
+            Got a suggestion? Found a bug that needs to be squashed? We love
+            hearing about new ideas to improve our app.
+          </p>
+        </div>
+      </div>
+    </section>
   </main>
 </template>
 

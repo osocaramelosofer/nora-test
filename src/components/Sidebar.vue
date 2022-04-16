@@ -25,7 +25,7 @@ const roadmapObjects = [
 </script>
 
 <template>
-  <aside class="w-64 grid gap-y-5">
+  <aside class="w-64 grid gap-y-5 content-start">
     <div class="frontend-mentor pl-5 pr-10 pb-6 rounded-md h-36 flex items-end">
       <div>
         <span class="block font-bold text-xl text-white">Frontend Mentor</span>

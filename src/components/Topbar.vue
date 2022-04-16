@@ -11,6 +11,7 @@
       py-2
       px-5
       rounded-lg
+      mb-5
     "
   >
     <div class="flex">

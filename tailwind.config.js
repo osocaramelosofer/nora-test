@@ -5,8 +5,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      width: {
+        '410': '410px',
+      },
+      maxWidth: {
+        '410': '410px',
+      },
       gridTemplateColumns: {
-        'main': '1fr 3fr'
+        'main': '250px 1fr'
       },
       colors:{
         'nora-purple': '#AD1FEA',
@@ -18,7 +24,6 @@ module.exports = {
         'nora-gray-300': '#F2F4FF',
         'nora-gray-400': '#647196',
         'nora-orange-100': '#F49F85',
-
 
       }
     },
