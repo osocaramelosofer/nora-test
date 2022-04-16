@@ -42,7 +42,7 @@ const tagArray = [
   },
 ];
 
-const suggestions = false;
+const suggestions = true;
 </script>
 
 <template>

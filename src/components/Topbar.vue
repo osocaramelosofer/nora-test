@@ -1,4 +1,5 @@
 <script setup>
+import Dropdown from './Dropdown.vue'
 </script>
 
 <template>
@@ -19,7 +20,8 @@
         <img src="../assets/idea.png" class="h-full w-full object-fill" />
       </div>
       <span class="text-white font-bold text-lg mr-5">6 Suggestions</span>
-      <span class="text-white font-bold text-lg mr-5">Sort by: Most vote</span>
+      <Dropdown />
+
     </div>
 
     <div>
