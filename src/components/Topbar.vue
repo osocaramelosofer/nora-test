@@ -25,9 +25,9 @@ import Dropdown from './Dropdown.vue'
     </div>
 
     <div>
-      <button class="bg-nora-purple rounded-md text-white px-2 py-1">
-        + Add Feedback
-      </button>
+      <div class="bg-nora-purple rounded-md text-white px-2 py-1">
+        <router-link to="Feedback">+ Add Feedback</router-link>
+      </div>
     </div>
   </div>
 </template>
