@@ -1,5 +1,4 @@
 <script setup>
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import Boardsuggestions from "./BoardSuggestions.vue";
 import Boardroadmap from "./BoardRoadmap.vue";
 
@@ -25,7 +24,7 @@ const roadmapObjects = [
 </script>
 
 <template>
-  <aside class="w-64 grid gap-y-5 content-start">
+  <aside class="laptop:w-64 laptop:gap-y-5 laptop:grid-cols-none laptop:content-start grid  grid-cols-3 gap-x-5 mb-12">
     <div class="frontend-mentor pl-5 pr-10 pb-6 rounded-md h-36 flex items-end">
       <div>
         <span class="block font-bold text-xl text-white">Frontend Mentor</span>
