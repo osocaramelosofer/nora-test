@@ -26,7 +26,10 @@ module.exports = {
         'nora-gray-400': '#647196',
         'nora-orange-100': '#F49F85',
 
-      }
+      },
+      screens: {
+        'laptop': '980px',
+      },
     },
   },
   plugins: [],
