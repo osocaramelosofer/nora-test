@@ -10,9 +10,8 @@ import Maincontent from "../components/MainContent.vue";
       bg-nora-gray-200
       grid
       laptop:grid-cols-main
-      py-20
       gap-x-14
-      px-10
+      tablet:py-20 tablet:px-10
       xl:px-48
       grid-cols-1
     "
