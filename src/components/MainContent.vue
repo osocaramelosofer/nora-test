@@ -1,4 +1,6 @@
 <script setup>
+import {ref} from 'vue'
+
 import Topbar from "./Topbar.vue";
 import Tag from "./Tag.vue";
 
@@ -42,7 +44,7 @@ const tagArray = [
   },
 ];
 
-const suggestions = false;
+const suggestions = ref(false);
 </script>
 
 <template>
@@ -67,6 +69,7 @@ const suggestions = false;
         class="
           h-full
           bg-white
+          px-5
           rounded-lg
           flex flex-col
           items-center
@@ -85,8 +88,13 @@ const suggestions = false;
             hearing about new ideas to improve our app.
           </p>
         </div>
-        <div class="bg-nora-purple rounded-md text-white px-3 py-2">
-          <router-link to="Feedback">+ Add Feedback</router-link>
+        <div class="flex flex-col gap-y-2">
+          <div class="bg-nora-purple rounded-md text-white px-3 py-2">
+            <router-link to="Feedback">+ Add Feedback</router-link>
+          </div>
+          <button @click="suggestions = !suggestions" class="bg-yellow-400 rounded-md p-2 font-semibold">
+            {{ suggestions ? 'Hidde suggestions' : 'Show suggestions'}}
+          </button>
         </div>
       </div>
     </section>
