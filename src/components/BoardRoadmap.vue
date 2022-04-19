@@ -5,7 +5,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="py-4 px-10 rounded-md h-36 bg-white flex flex-wrap gap-2">
+  <div class="py-4 px-10 rounded-md  bg-white flex flex-wrap gap-2">
     <div class="w-full flex justify-between items-center">
       <span class="text-nora-blue-300 font-bold text-lg">Roadmap</span>
       <a href="#" class="text-xs text-nora-blue-200 font-semibold">View</a>
