@@ -24,6 +24,8 @@ import Icon from "./utilities/Icon.vue";
   display: inline-block;
   text-align: left;
   min-width: 200px;
+  height: 100%;
+  margin-bottom: 30px;
 }
 
 .dropdown-text {
