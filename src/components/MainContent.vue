@@ -42,7 +42,7 @@ const tagArray = [
   },
 ];
 
-const suggestions = true;
+const suggestions = false;
 </script>
 
 <template>
@@ -62,7 +62,7 @@ const suggestions = true;
       </div>
     </div>
 
-    <section v-else class="h-full">
+    <section v-else class="h-full px-6 tablet:px-0">
       <div
         class="
           h-full
@@ -71,9 +71,10 @@ const suggestions = true;
           flex flex-col
           items-center
           justify-center
+          gap-y-4
         "
       >
-        <div class="h-20 w-20">
+        <div class="h-40 w-40">
           <img src="../assets/no-data.png" class="w-full h-full object-fill" />
         </div>
         <span class="font-bold text-2xl text-nora-blue-300 text-center">There is no feedback yet.</span>
@@ -83,6 +84,9 @@ const suggestions = true;
             Got a suggestion? Found a bug that needs to be squashed? We love
             hearing about new ideas to improve our app.
           </p>
+        </div>
+        <div class="bg-nora-purple rounded-md text-white px-3 py-2">
+          <router-link to="Feedback">+ Add Feedback</router-link>
         </div>
       </div>
     </section>
