@@ -12,7 +12,8 @@ module.exports = {
         '410': '410px',
       },
       gridTemplateColumns: {
-        'main': '250px 1fr'
+        'main': '250px 1fr',
+        'sugesstion-grid': '70% 1fr'
       },
       colors:{
         'nora-purple-50': '#CFD7FF',
@@ -30,6 +31,7 @@ module.exports = {
       },
       screens: {
         'laptop': '980px',
+        'tablet': '730px',
       },
     },
   },
