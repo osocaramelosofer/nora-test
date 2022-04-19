@@ -15,6 +15,7 @@ module.exports = {
         'main': '250px 1fr'
       },
       colors:{
+        'nora-purple-50': '#CFD7FF',
         'nora-purple': '#AD1FEA',
         'nora-blue-100': '#62BCFA',
         'nora-blue-200': '#4661E6',
