@@ -6,6 +6,7 @@ const router = createRouter({
     routes: [
         {path:'/', name:'Home', component: Home},
         {path:'/feedback', name:'Feedback', component: ()=> import('../pages/AddFeedback.vue')},
+        {path:'/roadmap', name:'Roadmap', component: ()=> import('../pages/Roadmap.vue')},
 
     ]
 })

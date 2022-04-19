@@ -6,7 +6,7 @@
             <div class="circle flex justify-center items-center rounded-full w-14 h-14 bg-nora-purple ">
                 <span class="font-bold text-2xl text-white">+</span>
             </div>
-            <h2 class="text-nora-blue-300 font-bold text-2xl mb-10">Create New Feedback</h2>
+            <h2 class="text-nora-blue-300 font-bold text-2xl mb-10">Editing "test post"</h2>
 
             <div class="grid gap-y-2 mb-5">
                 <span class="font-bold text-sm text-nora-blue-300">Feedback Title</span>
