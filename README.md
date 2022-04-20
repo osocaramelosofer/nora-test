@@ -2,7 +2,7 @@
 
 Clone de repo.
 ```
-$git clone 
+$ git clone https://github.com/osocaramelosofer/nora-test.git
 ```
 
 Install dependecies.
