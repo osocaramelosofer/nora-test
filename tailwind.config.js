@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      padding: {
+        '420px': '500px',
+      },
       width: {
         '410': '410px',
       },
