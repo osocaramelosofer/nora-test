@@ -1,7 +1,17 @@
-# Vue 3 + Vite
+# INSTALLATION
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Clone de repo.
+```
+$git clone 
+```
 
-## Recommended IDE Setup
+Install dependecies.
+```
+$ cd nora-test
+$ npm i
+```
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+Run the project
+```
+$ npm run dev
+```
