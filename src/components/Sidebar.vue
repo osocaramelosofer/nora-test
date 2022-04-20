@@ -80,7 +80,7 @@ const toggleMenu = () => showMenu.value = !showMenu.value
 }
 
 .bg-mobile {
-  background-image: linear-gradient(to right, #7ad8fb, #7bc5ff, #99adfd, #bf91e6, #dd71bc, #ec69a2, #f36686, #f2696a, #f67d69, #f9906b, #faa371, #fbb57a);
+  background-image: linear-gradient(to right top, #28a7ed, #009cf8, #008eff, #3f7dff, #6b68ff, #9657f3, #b740e2, #d119cd, #e311b0, #eb2396, #ec3981, #e84d70);
 }
 .blur-bg {
   background-color: rgba(7, 7, 7, .65);
