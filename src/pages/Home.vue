@@ -13,7 +13,6 @@ import Maincontent from "../components/MainContent.vue";
       gap-x-14
       md:py-20 md:px-10
       xl:px-48
-
       grid-cols-1
     "
   >
