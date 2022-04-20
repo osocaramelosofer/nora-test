@@ -11,8 +11,9 @@ import Maincontent from "../components/MainContent.vue";
       grid
       laptop:grid-cols-main
       gap-x-14
-      tablet:py-20 tablet:px-10
+      md:py-20 md:px-10
       xl:px-48
+
       grid-cols-1
     "
   >
