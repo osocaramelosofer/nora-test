@@ -1,5 +1,5 @@
 <template>
-  <div class="grid gap-y-16 px-52 py-6">
+  <div class="grid gap-y-16 px-16 md:px-52 xl:px-96 2xl:px-420px py-6">
     <router-link to="/" class="font-bold text-sm text-nora-gray-400">Go back</router-link>
 
     <div class="card bg-white p-10 rounded-xl relative">
