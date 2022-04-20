@@ -5,7 +5,7 @@ import RoadmapCard from "../components/RoadmapCard.vue";
 
 let purple = ref(false)
 let blue = ref(false)
-let orange = ref(false)
+let orange = ref(true)
 
 const planned = [
   {
@@ -148,18 +148,18 @@ const addBorderColor = (color) => {
     <!-- Show when is less than 768px -->
     <div class="md:hidden px-8">
       <div class="flex justify-between border-b border-gray-300">
-        <div @click="addBorderColor('blue')" :class="{'border-orange-400': blue}" class="border-b-4 cursor-pointer">
+        <div @click="addBorderColor('orange')" :class="{'border-orange-400': orange}" class="border-b-4 cursor-pointer">
           <span class="font-bold text-sm text-nora-blue-300">Planned(2)</span>
         </div>
         <div @click="addBorderColor('purple')" :class="{'border-purple-500': purple}" class="border-b-4 cursor-pointer">
           <span class=" font-bold text-sm text-nora-blue-300">In-Progress(3)</span>
         </div>
-        <div @click="addBorderColor('orange')" :class="{'border-blue-300': orange}" class="border-b-4 cursor-pointer">
+        <div @click="addBorderColor('blue')" :class="{'border-blue-300': blue}" class="border-b-4 cursor-pointer">
           <span class="font-bold text-sm text-nora-blue-300">Live(1)</span>
         </div>
       </div>
 
-      <div class="pb-28 " :class="{'hidden': !blue}">
+      <div class="pb-28 " :class="{'hidden': !orange}">
         <div class="container grid gap-y-5">
           <div class="flex flex-col gap-y-1 my-3">
             <span class="font-bold text-lg text-nora-blue-300">Planned ({{planned.length}})</span>
@@ -185,14 +185,14 @@ const addBorderColor = (color) => {
           />
         </div>
       </div>
-      <div class="pb-28 " :class="{'hidden': !orange}">
+      <div class="pb-28 " :class="{'hidden': !blue}">
         <div class="container grid gap-y-5">
           <div class="flex flex-col gap-y-1 my-3">
             <span class="font-bold text-lg text-nora-blue-300">Live ({{live.length}})</span>
             <span class="text-nora-gray-400 text-sm font-normal">Released features</span>
           </div>
           <roadmap-card
-            v-for="(card, index) in planned"
+            v-for="(card, index) in live"
             :key="index"
             :card="card"
           />
