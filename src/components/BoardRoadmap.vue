@@ -8,7 +8,9 @@ const props = defineProps({
   <div class="py-4 px-10 rounded-md  bg-white flex flex-wrap gap-2">
     <div class="w-full flex justify-between items-center">
       <span class="text-nora-blue-300 font-bold text-lg">Roadmap</span>
-      <a href="#" class="text-xs text-nora-blue-200 font-semibold">View</a>
+      <router-link to="Roadmap">
+        <span class="text-xs text-nora-blue-200 font-semibold underline decoration-1">View</span>
+      </router-link>
     </div>
 
     <div
