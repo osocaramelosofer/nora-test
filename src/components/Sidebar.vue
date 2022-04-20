@@ -59,7 +59,7 @@ const toggleMenu = () => showMenu.value = !showMenu.value
       </div>
     </nav>
     <div v-if="showMenu" class="blur-bg w-screen h-screen absolute z-10">
-      <div class="top absolute bg-nora-gray-100 pl-5  pt-10  right-0  h-screen w-3/5 flex flex-col gap-y-10">
+      <div class="top absolute bg-nora-gray-100 pl-5  pt-10  right-0 sm:px-12 h-screen w-3/5 flex flex-col gap-y-10">
         <Boardsuggestions :suggestions="suggestions" />
         <Boardroadmap :roadmapObjects="roadmapObjects"/>
       </div>
